@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateActivity">
+
+    <LinearLayout
+        android:layout_width="396dp"
+        android:layout_height="781dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="183dp" />
+
+        <EditText
+            android:id="@+id/ArticleTitleInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Title"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/ArticleAbstractInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Abstract"
+            android:inputType="textPersonName" />
+
+        <ImageView
+            android:id="@+id/ArticleImageInput"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:src="@android:drawable/ic_menu_report_image" />
+
+        <EditText
+            android:id="@+id/ArticleCategoryInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Category"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/articleSubtitleInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Subtitle"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/articleBodyInput"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:ems="10"
+            android:hint="Body"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btn_save_article"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Article" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
