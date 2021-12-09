@@ -38,11 +38,24 @@
             android:hint="Abstract"
             android:inputType="textPersonName" />
 
-        <ImageView
-            android:id="@+id/ArticleImageInput"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="69dp"
-            android:src="@android:drawable/ic_menu_report_image" />
+            android:layout_height="70dp">
+
+            <ImageView
+                android:id="@+id/ArticleImageInput"
+                android:layout_width="190dp"
+                android:layout_height="69dp"
+                android:src="@android:drawable/ic_menu_report_image" />
+
+            <Button
+                android:id="@+id/btn_select_image"
+                android:layout_width="166dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Select Image" />
+        </LinearLayout>
 
         <EditText
             android:id="@+id/ArticleCategoryInput"
@@ -53,7 +66,7 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/articleSubtitleInput"
+            android:id="@+id/ArticleSubtitleInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -61,9 +74,9 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/articleBodyInput"
+            android:id="@+id/ArticleBodyInput"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="271dp"
             android:ems="10"
             android:hint="Body"
             android:inputType="textPersonName" />
